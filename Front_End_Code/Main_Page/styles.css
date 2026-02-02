@@ -1,0 +1,188 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Outfit', sans-serif;
+}
+body {
+  background-color: #fff;
+  color: #333;
+  padding-top: 70px;
+}
+.navbar{
+  top: 0;
+}
+header img {
+  height: 40px;
+}
+.hero {
+  background-image: url('Images/frankie-lu-nBIrMZbt2xo-unsplash.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 20rem 5rem;
+  text-align: left;
+}
+
+@media (max-width: 579px) {
+  .hero{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem 1rem 15rem 1rem;
+    color: #000;
+  }
+  
+}
+h5{
+  font-family: "DM Serif Display", serif;
+}
+.hero h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-family: "DM Serif Display", serif;
+}
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+.hero button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+section.philosophy {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+.philosophy h2 {
+  font-family: "DM Serif Display", serif;
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+.philosophy fas{
+  width: 10px;
+}
+.philosophy p {
+  color: #888;
+  margin-bottom: 3.5rem;
+}
+.values {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+.value {
+  flex: 1 1 200px;
+  max-width: 250px;
+  text-align: center;
+}
+.value i {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+.location-cards  {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: stretch;
+  transition: all 0.3s ease;
+}
+
+.location-card {
+  flex: 1;
+  aspect-ratio: 16 / 9;
+  border-radius: 1rem;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+  transition: flex 0.4s ease, transform 0.3s ease;
+  min-width: 100px;
+  max-width: 40%;
+  height: 30rem;
+}
+
+
+
+.location-card .label {
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.location-card .icon-link {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: black;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+/* Featured (Nairobi) default size */
+.location-card.featured {
+  flex: 2;
+}
+
+/* Hover behavior: shrink others and grow hovered */
+.location-cards:hover .location-card {
+  flex: 1;
+}
+
+.location-card:hover {
+  flex: 2 !important;
+  z-index: 2;
+}
+
+
+footer {
+  background: #f1f1f1;
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+  font-size: 0.9rem;
+}
+footer .brand {
+  font-weight: bold;
+}
+footer .column {
+  flex: 1;
+}
+footer a {
+  color: #000;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+.socials {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.socials i {
+  font-size: 1.2rem;
+  color: #333;
+}
+.nav-link-toggle{
+  transition: opacity 0.3s ease;
+}
+.fade-out {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
